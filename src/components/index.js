@@ -1,0 +1,24 @@
+export { default as Navbar } from "./Navbar";
+export { default as Hero } from "./Hero";
+export { default as Highlights } from "./Highlights";
+export { default as VideoCarousel } from "./VideoCarousel";
+export { default as Model } from "./Model";
+export { default as ModelView } from "./ModelView";
+export { default as Lights } from "./Lights";
+export { default as Loader } from "./Loader";
+export { default as IPhone } from "./IPhone";
+export { default as Features } from "./Features";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as Camera } from "./Camera";
+export { default as Lens } from "./Lens";
+export { default as ImageCarousel } from "./ImageCarousel";
+export { default as Zoom } from "./Zoom";
+export { default as Gig } from "./Gig";
+export { default as Battery } from "./Battery.jsx";
+export { default as Safety } from "./Safety.jsx";
+export { default as Env } from "./Env.jsx";
+export { default as Shop } from "./Shop.jsx";
+export { default as CardCarousel } from "./CardCarousel";
+export { default as Explore } from "./Explore";
+export { default as Footer } from "./Footer";
+
