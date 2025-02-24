@@ -19,7 +19,7 @@ const Battery = () => {
                     <h2 className="hiw-title">
                         Battery life that’s<br /> positively Pro.
                     </h2>
-                    <p className="hiw-subtitle text-center px-36">
+                    <p className="hiw-subtitle text-center">
                         Even with so many advanced new features,
                         iPhone 15 Pro still gives you amazing all‑day battery life.
                     </p>

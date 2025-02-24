@@ -16,7 +16,7 @@ const Model = () => {
   const [size, setSize] = useState("small");
 
   const [model, setModel] = useState({
-    title: "iPhone 15 Pro in Natural Titanium",
+    title: " in Natural Titanium",
     color: ["#8F8A81", "#FFE7B9", "#6F6C64"],
     img: yellowImg,
   });
@@ -57,8 +57,9 @@ const Model = () => {
         <h1 id="heading" className="section-heading">
           Take a closer look.
         </h1>
-        <div className="flex flex-col items-center mt-5">
-          <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
+        <div className="font-semibold text-xl md:text-2xl lg:pt-5">Glide across and view in 3D.</div>
+        <div className="flex flex-col w-full overflow-hidden items-center mt-5">
+          <div className="w-full h-[75vh] flex w-full md:h-[90vh] overflow-hidden relative">
             <ModelView
               index={1}
               groupRef={small}
@@ -78,7 +79,7 @@ const Model = () => {
               size={size}
             />
             <Canvas
-              className="w-full h-full"
+              // className="w-[100vh] h-screen"
               style={{
                 position: "fixed",
                 top: 0,
@@ -86,6 +87,8 @@ const Model = () => {
                 left: 0,
                 right: 0,
                 overflow: "hidden",
+                height: "100vh",
+                width: "100vw",
               }}
               eventSource={document.getElementById("root")}
             >
@@ -93,7 +96,7 @@ const Model = () => {
             </Canvas>
           </div>
           <div className="mx-auto w-full">
-            <p className="text-sm font-light text-center mb-5">{model.title}</p>
+            <p className="text-sm font-light text-center mb-5">{`${size === "small" ? "iPhone 15 Pro" : "iPhone 15 Pro Max"}${model.title}`}</p>
             <div className="flex-center">
               <ul className="color-container">
                 {models.map((item, i) => (

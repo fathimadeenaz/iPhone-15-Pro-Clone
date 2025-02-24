@@ -56,6 +56,12 @@ canvas {
       rgba(0, 0, 0, 0));
 }
 
+#camera-img {
+  transform: scale(1.25);
+  object-fit: cover;
+  object-position: center;
+}
+
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center;

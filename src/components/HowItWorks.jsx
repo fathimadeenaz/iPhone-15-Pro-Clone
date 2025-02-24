@@ -10,13 +10,13 @@ const HowItWorks = () => {
   const videoRef = useRef();
 
   useGSAP(() => {
-    gsap.from("#chip", {
+    gsap.to("#chip", {
       scrollTrigger: {
         trigger: "#chip",
         start: "20% bottom",
       },
-      opacity: 0,
-      scale: 2,
+      opacity: 1,
+      scale: 0.75,
       duration: 2,
       ease: "power2.inOut",
     });
@@ -27,12 +27,12 @@ const HowItWorks = () => {
   return (
     <section className="common-padding">
       <div className="screen-max-width">
-        <div id="chip" className="flex-center w-full my-20">
+        <div id="chip" className="flex-center w-full my-20 opacity-0">
           <img
             src={chipImg}
             alt="chip"
-            width={180}
-            height={180}
+            width={250}
+            height={250}
           />
         </div>
         <div className="flex flex-col items-center">

@@ -21,7 +21,7 @@ const Lens = () => {
   }, []);
 
   return (
-    <section className="common-padding">
+    <section className="w-screen overflow-hidden common-padding">
       <div className="screen-max-width">
         <div className="mb-12 w-full">
           <div className="feature-text-container gap-24">
