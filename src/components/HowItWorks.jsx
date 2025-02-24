@@ -17,7 +17,7 @@ const HowItWorks = () => {
       },
       opacity: 1,
       scale: 0.75,
-      duration: 2,
+      duration: 4,
       ease: "power2.inOut",
     });
 

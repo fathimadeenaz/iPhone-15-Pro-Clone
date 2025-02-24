@@ -11,7 +11,7 @@ const Safety = () => {
     return (
         <section className="sm:py-32 py-20 md:px-4 lg:px-10 flex-center">
             <div className="bg-zinc md:w-[85%] w:100% p-16 lg:p-24">
-                <div className="flex-center w-full relative">
+                <div className="relative grid w-full">
                     <div className="w-full">
                         <img
                             src={safetyImg}
@@ -19,7 +19,7 @@ const Safety = () => {
                             className="h-[50vh] lg:h-[80vh] w-full"
                         />
                     </div>
-                    <div className="absolute top-[25%] lg:top-[15%] left-[10%] z-10 text-4xl lg:text-7xl font-semibold p-10">
+                    <div className="absolute inset-0 flex items-center justify-center max-sm:p-4 max-sm:text-2xl text-4xl lg:text-6xl font-semibold">
                         In an emergency,<br />
                         iPhone has your back.
                     </div>
